@@ -28,78 +28,9 @@
                                         
                                         setTimeout(handlePreloader2, 3000)
                                     </script>
+
 </head>
-<script type="text/javascript" language="javascript">
-    function ShowMonth() {
-        document.getElementById('btnMonth').disabled = true;
-        document.getElementById('btnYear').disabled = false;
-        document.getElementById("tblm").style.display = "block";
-        document.getElementById("tbly").style.display = "none";
-    }
 
-    function ShowYear() {
-        document.getElementById('btnMonth').disabled = false;
-        document.getElementById('btnYear').disabled = true;
-        document.getElementById("tblm").style.display = "none";
-        document.getElementById("tbly").style.display = "block";
-    }
-
-    function CalcM() {
-        var ft;
-        var pt;
-        var ans;
-        ft = parseFloat(document.getElementById("txtft").value);
-        pt = parseFloat(document.getElementById("txtpt").value);
-        ans = Math.round((ft + (pt / 120)) * 100) / 100;
-        document.getElementById("txtans").innerHTML = ans;
-    }
-
-    function CalcY() {
-        document.getElementById("txtdet").style.backgroundColor = "White";
-        var total;
-        var ans;
-        total = 0;
-        total = total + parseFloat(document.getElementById("Text1").value);
-        total = total + parseFloat(document.getElementById("Text2").value);
-        total = total + parseFloat(document.getElementById("Text3").value);
-        total = total + parseFloat(document.getElementById("Text4").value);
-        total = total + parseFloat(document.getElementById("Text5").value);
-        total = total + parseFloat(document.getElementById("Text6").value);
-        total = total + parseFloat(document.getElementById("Text7").value);
-        total = total + parseFloat(document.getElementById("Text8").value);
-        total = total + parseFloat(document.getElementById("Text9").value);
-        total = total + parseFloat(document.getElementById("Text10").value);
-        total = total + parseFloat(document.getElementById("Text11").value);
-        total = total + parseFloat(document.getElementById("Text12").value);
-        ans = Math.round((total / 12) * 100) / 100;
-        document.getElementById("txtansy").innerHTML = ans;
-        if (ans >= 50) {
-            document.getElementById("txtdet").value = "Large Employer";
-            document.getElementById("txtdet").style.backgroundColor = "#FF3333";
-        }
-        else {
-            document.getElementById("txtdet").value = "Small Employer";
-            document.getElementById("txtdet").style.backgroundColor = "#99FF66";
-        }
-    }
-
-    function PrintDiv() {
-        var divToPrint = document.getElementById('form1');
-        var popupWin = window.open('', '_blank', '');
-        popupWin.document.open();
-        popupWin.document.write('<html><body onload="window.print()">' + divToPrint.innerHTML + '</html>');
-        popupWin.document.close();
-    }
-    </script>
-    <style type="text/css">
-        @media print 
-        {
-            
-          .divHid {
-            display:none;
-          }
-        }
-    </style>
 <body>
 <div class="page-wrapper">
  	
@@ -133,7 +64,7 @@
             <div class="auto-container">
                 <div class="row clearfix">
                     <!--Logo-->
-                    <div class="col-md-3 col-sm-3 col-xs-12 logo"><a href="index.asp.html"><img src="images/logo.png" alt="GMR" title="GMR"></a></div>
+                    <div class="col-md-3 col-sm-3 col-xs-12 logo"><a href="index.htm"><img src="images/logo.png" alt="GMR" title="GMR"></a></div>
                     
                     <div class="col-lg-5 col-md-6 col-sm-10 header-top-infos pull-right">
                         <ul class="clearfix">
@@ -145,8 +76,8 @@
                             </li>
                             <li>
                                 <div class="clearfix ">
-                                    <a href="https://www.gmr-usa.com/trust2/frame.aspx" target="_blank" style="color:#2a3465;"><img src="images/icons/header-key.png" alt=""></a>
-                                    <a href="https://www.gmr-usa.com/trust2/frame.aspx" target="_blank" style="color:#2a3465;"><p><b>PCT Online</b> <br>(Employer)</p></a>
+                                    <a href="https://portal.gmr-usa.com/trust2/frame.aspx" target="_blank" style="color:#2a3465;"><img src="images/icons/header-key.png" alt=""></a>
+                                    <a href="https://portal.gmr-usa.com/trust2/frame.aspx" target="_blank" style="color:#2a3465;"><p><b>PCT Online</b> <br>(Employer)</p></a>
                                 </div>
                             </li>
                         </ul>
@@ -174,13 +105,13 @@
                         
                         <div class="navbar-collapse collapse clearfix">                                                                                              
                             <ul class="navigation">
-                                <li id="m1"><a href="index.asp.html">Home</a>
+                                <li id="m1"><a href="index.htm">Home</a>
                                     
                                 </li>
-                                <li id="m2" class="dropdown"><a href="about.asp.html">About</a>
+                                <li id="m2" class="dropdown"><a href="about.htm">About</a>
                                     <ul class="submenu">
-                                        <li><a href="about.asp.html">About Us</a></li>
-                                        <li><a href="community.asp.html">Community Outreach</a></li>
+                                        <li><a href="about.htm">About Us</a></li>
+                                        <li><a href="community.htm">Community Outreach</a></li>
                                         <!--<li><a href="team.asp">Meet Our Team</a></li>-->
                                         
                                         <!--<li><a href="http://www.nexgenbenefits.com" target="_blank">NexgenBenefits.com</a></li>-->
@@ -196,33 +127,33 @@
                                     </ul>
                                 </li>-->
                                 <li id="m3">
-                                    <a href="services.asp.html">Our Services</a>
+                                    <a href="services.htm">Our Services</a>
 
                                 </li>
                                 <!--<li id="m4" ><a href="news.asp">News</a>
                                     
                                 </li>-->
-                                <li id="m5" class="dropdown"><a href="requests.asp.html">Tools</a>
+                                <li id="m5" class="dropdown"><a href="requests.htm">Tools</a>
                                     <ul class="submenu">
-                                        <li><a href="requests.asp.html">PTO/Supp Requests</a></li>
-                                        <li><a href="forms.asp.html">Online Forms</a></li>
+                                        <li><a href="requests.htm">PTO/Supp Requests</a></li>
+                                        <li><a href="forms.htm">Online Forms</a></li>
                                         <li><a href="pdf/2016_Health_Care_Reform_Checklist.pdf" target="_blank">ACA Checklist</a></li>
                                         <li><a href="pdf/ACA_Penalties_by_Company_Size.pdf" target="_blank">ACA Penalties</a></li>
-                                        <li><a href="ersizecalcn.asp.html">PPACA Group Calc</a></li>
-					<li><a href="videos.asp.html">Videos</a></li>
+                                        <li><a href="ersizecalcn.htm">PPACA Group Calc</a></li>
+					<li><a href="videos.htm">Videos</a></li>
                                     </ul>
                                 </li>
-                                <li id="m6"><a href="contact.asp.html">Contact</a>
+                                <li id="m6"><a href="contact.htm">Contact</a>
                                 </li>
                                 <li>
                                     &nbsp;
                                 </li>
                                 <li class="current dropdown"> <a href="#">Online Account</a>
                                      <ul class="submenu">
-                                        <li><a href="https://www.gmr-usa.com/gmrn/eetrust/login.asp" target="_blank">Employee Trust Account</a></li>
-                                        <li><a href="https://www.gmr-usa.com/trust2/frame.aspx" target="_blank">PCT Online (Employer)</a></li>
+                                        <li><a href="https://portal.gmr-usa.com/gmrn/eetrust/login.asp" target="_blank">Employee Trust Account</a></li>
+                                        <li><a href="https://portal.gmr-usa.com/trust2/frame.aspx" target="_blank">PCT Online (Employer)</a></li>
                                         <li><a href="https://gmrassociates.wealthcareportal.com" target="_blank">FSA/HRA Login</a></li>
-                                         <!--<li><a href="https://www.gmr-usa.com/plan" target="_blank">Section 125 Portal</a></li>-->
+                                         <!--<li><a href="https://portal.gmr-usa.com/plan" target="_blank">Section 125 Portal</a></li>-->
                                     </ul>
                                 </li>
                             </ul>
@@ -247,11 +178,11 @@
     <!-- Page Banner -->
     <section class="page-banner" style="background-image:url(images/background/page-banner-1.png);">
          <div class="auto-container">
-            <div class="page-title"><h1>PPACA Group Calc</h1></div>
+            <div class="page-title"><h1>Online Forms</h1></div>
             <div class="bread-crumb text-right">
                 <span class="initial-text">you are here: </span>
                 <a href="#index.asp">Home</a>
-                <span class="current">PPACA Group Calc</span>
+                <span class="current">Online Forms</span>
             </div>
         </div>
 	</section>
@@ -263,192 +194,203 @@
                 
             <!-- Left Content -->
             <section class="left-content col-lg-12 col-md-12 col-sm-12 col-xs-12">   
+            <div class="sec-title"><h3 class="skew-lines">EBT Trust Forms</h3></div>
+                    
+                    <div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                    	<center><figure class="images">
+                        	<a style="color:#2a3565;" href="https://www.cognitoforms.com/GMR/GMRDirectDepositPaycardForm" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                            
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">Direct Deposit/<br>Paycard Form</h5>
+                        </div>
+                    </div>
+
+                    <div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                    	<center><figure class="images">
+                        	<a style="color:#2a3565;" href="https://www.cognitoforms.com/GMR/GMRSuppUnempVerification" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                            
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">Supp Unemp<br>Verification Form</h5>
+                        </div>
+                    </div>
+			
+		     <div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                    	<center><figure class="images">
+                        	<a style="color:#2a3565;" href="pdf/Third%20Party%20Authorization-EBT%20%26%20401k.pdf" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                            
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">Third Party<br>Authorization</h5>
+                        </div>
+                    </div>
+
+                    <div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                    	<center><figure class="images">
+                        	<a style="color:#2a3565;" href="EBT%20Beneficiary%20Form.pdf" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                            
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">EBT<br>Beneficiary Form</h5>
+                        </div>
+                    </div>
+
+                    <div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                    	<center><figure class="images">
+                        	<a style="color:#2a3565;" href="Waiver%20Electronic%20Check%20Stub.pdf" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                            
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">Waiver Electronic<br>Paystubs</h5>
+                        </div>
+                    </div>
+
+                    <!--<div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                    	<center><figure class="images">
+                        	<a style="color:#2a3565;" href="http://portal.gmr-usa.com/GMRN/Waiver%20Electronic%20Statement.pdf" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                            
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">Waiver Electronic<br />Statements</h5>
+                        </div>
+                    </div>-->
+
+                    <div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                    	<center><figure class="images">
+                        	<a style="color:#2a3565;" href="../pub/irs-pdf/fw4.pdf" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                            
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">Federal<br>Withholding Form</h5>
+                        </div>
+                    </div>
+
+                    <div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                    	<center><figure class="images">
+                        	<a style="color:#2a3565;" href="../pdf/current_forms/it/it2104_fill_in.pdf" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                            
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">New York<br>Withholding Form</h5>
+                        </div>
+                    </div>
+            <div class="clearfix"></div>
+           <div class="sec-title" style="padding-top:20px;"><h3 class="skew-lines">General Benefit Forms</h3></div>
+            
+                	<div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                    	<center><figure class="images">
+                        	<a style="color:#2a3565;" href="pdf/DepCare%20Claim%20Form.pdf" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                            
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">Dependent Care<br>Claim Form</h5>
+                        </div>
+                    </div>
+              
                 
-    <div class="contact-form">
-        <div id="divHid" class="divHid">
-        <center>
-        <input id="btnPrint" type="button" value="Print" onclick="PrintDiv();" class="theme-btn dark-btn hvr-bounce-to-right">
-        <input id="btnMonth" type="button" value="Monthly Calc" onclick="ShowMonth();" disabled="disabled" class="theme-btn dark-btn hvr-bounce-to-right">
-        <input id="btnYear" type="button" value="Year Calc" onclick="ShowYear();" class="theme-btn dark-btn hvr-bounce-to-right">&nbsp;
-        </center></div><br><br>
-        <form id="form1" class="clearfix">
-        
-        <div id="tblm">
-                    Employer Name:_____________________________________________________
-                    <br><br><u>Monthly Employee Count Calculator</u><br>
-                    
-
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                        Number of Full-time employees<br>
-                        (30 or more hours per week)
-                    </div>
-                    
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                        <input id="txtft" type="text">
-                    </div>
-                    <div class="clearfix"></div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                        Total Hours worked by all<br>part-time employees
-                    </div>
-                
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                        <input id="txtpt" type="text">
-                    </div>
-                    <div class="clearfix"></div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                        <input id="btnCalcM" style="width: 100%" type="button" value="Calc" onclick="CalcM();" class="divHid theme-btn dark-btn hvr-bounce-to-right">
-                    </div>
-                    <div class="col-md-2 col-sm-2 col-xs-2">
-                        <strong>Monthly Total</strong>
-                    </div>
-                    <div class="col-md-7 col-sm-7 col-xs-7">
-                        <strong><span id="txtans"></span></strong>
-                    </div>
-                    <div class="clearfix"></div><br>
-                    Date:______________________________________<br>
-                    Signature:__________________________________
-        
-                    </div>
-
-                    <div id="tbly" style="display:none;">
-                    Employer Name:_____________________________________________________
-                    <br><br><u>Determination of Large Employer Status</u><br>
-                    
-                    <div class="col-md-1 col-sm-1 col-xs-1">
-                        January
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                    <input id="Text1" type="text">
-                    </div>
-                   
-
-                    <div class="col-md-1 col-sm-1 col-xs-1">
-                    February
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                    <input id="Text2" type="text">
-                    </div>
-                    <div class="clearfix"></div>
-
-                    <div class="col-md-1 col-sm-1 col-xs-1">
-                    March
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                    <input id="Text3" type="text">
-                    </div>
-                   
-
-                    <div class="col-md-1 col-sm-1 col-xs-1">
-                    April
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                    <input id="Text4" type="text">
-                    </div>
-                    <div class="clearfix"></div>
-
-                    <div class="col-md-1 col-sm-1 col-xs-1">
-                    May
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                    <input id="Text5" type="text">
-                    </div>
-                    
-
-                    <div class="col-md-1 col-sm-1 col-xs-1">
-                    June
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                    <input id="Text6" type="text">
-                    </div>
-                    <div class="clearfix"></div>
-
-                    <div class="col-md-1 col-sm-1 col-xs-1">
-                    July
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                    <input id="Text7" type="text">
-                    </div>
-                   
-
-                    <div class="col-md-1 col-sm-1 col-xs-1">
-                    August
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                    <input id="Text8" type="text">
-                    </div>
-                    <div class="clearfix"></div>
-
-                    <div class="col-md-1 col-sm-1 col-xs-1">
-                    September
-                    </div>
-                    
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                    <input id="Text9" type="text">
-                    </div>
-                    
-
-                    <div class="col-md-1 col-sm-1 col-xs-1">
-                    October
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                    <input id="Text10" type="text">
-                    </div>
-                    <div class="clearfix"></div>
-
-                    <div class="col-md-1 col-sm-1 col-xs-1">
-                    November
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                    <input id="Text11" type="text">
-                    </div>
-                    
-
-                    <div class="col-md-1 col-sm-1 col-xs-1">
-                    December
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                    <input id="Text12" type="text">
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                    <input id="btnY" style="width: 100%" type="button" value="Calc" onclick="CalcY();" class="divHid theme-btn dark-btn hvr-bounce-to-right">
-                    </div>
-                    <div class="col-md-2 col-sm-2 col-xs-2">
-                    <strong> Total</strong>
-                    </div>
-                    <div class="col-md-7 col-sm-7 col-xs-7">
-                        <strong><span id="txtansy"> </span></strong>
-                    </div>
-                    <div class="clearfix"></div>
-                <strong>Determination</strong>
-                <div class="clearfix"></div>
-                <input id="txtdet" readonly="readonly" style="border-right: white thin solid; border-top: white thin solid;
-                        border-left: white thin solid; border-bottom: white thin solid; font-weight: bold; background-color: White;" type="text">
-                    Date:______________________________________<div class="clearfix"></div>
-                    Signature:__________________________________
-
-                    </div>
                
-    </form>
-    <br>
-    <small>
-    <u>PPACA Group Size Calculator Disclaimer</u><br>
-    Nexgen Benefits has provided this calculator as a courtesy to assist in the determination of Large Employer Status for purposes of the Patient Protection and Affordable Care Act (PPACA).  Nexgen Benefits cannot be held liable for any regulatory changes, or interpretation of those regulations, by any government agency in regards to this calculation.  Nexgen Benefits is also not liable for the accuracy of the data entered into this calculator by an employer, the accuracy of the resulting calculation and/or the ultimate determination of employer size as required by PPACA.
-    </small></div>
-           
+                	<div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                        <center>
+                    	<figure class="images">
+                        	<a style="color:#2a3565;" href="pdf/fsa%20claim%20form.pdf" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                            
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">FSA<br>Claim Form</h5>
+                        </div>
+                    </div>
+            
+                   <div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                        <center>
+                    	<figure class="images">
+                        	<a style="color:#2a3565;" href="pdf/fsa%20expense%20worksheet.pdf" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                            
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">FSA Expense<br>Worksheet</h5>
+                        </div>
+                    </div>
+            
+                	<div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                    	<center><figure class="images">
+                        	<a style="color:#2a3565;" href="pdf/FSA%20Mileage%20Claim%20Form.pdf" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                           
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">FSA Mileage<br>Claim Form</h5>
+                        </div>
+                    </div>
+
+                    <div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                    	<center><figure class="images">
+                        	<a style="color:#2a3565;" href="pdf/HRA%20Claim%20Form.pdf" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                           
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">HRA Claim<br>Claim Form</h5>
+                        </div>
+                    </div>
+
+                    <div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                        <center>
+                    	<figure class="images">
+                        	<a style="color:#2a3565;" href="pdf/hra-fsa%20claim%20form.pdf" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                            
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">HRA/FSA<br>Claim Form</h5>
+                        </div>
+                    </div>
+
+                    <div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                        <center>
+                    	<figure class="images">
+                        	<a style="color:#2a3565;" href="pdf/Request%20for%20Cobra%20Letter.pdf" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                            
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">Request for<br>Cobra Ltr</h5>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                        <center>
+                    	<figure class="images">
+                        	<a style="color:#2a3565;" href="https://www.cognitoforms.com/GMR/QSEHRAREIMBURSEMENTCLAIMFORM" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                            
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">Merit Alliance<br>QSEHRA Form  </h5>
+                        </div>
+                    </div>
+
+                     <div class="clearfix"></div>
+            <!--<div class="sec-title" style="padding-top:20px;"><h3 class="skew-lines ">Construction Training Trust Forms</h3></div>
+                    
+                    <div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                    	<center><figure class="images">
+                        	<a style="color:#2a3565;" href="pdf/ctt contribution form.pdf" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                            
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">CTT<br />Contribution Form</h5>
+                        </div>
+                    </div>
+              
+                
+               
+                	<div class="inner-box hvr-float-shadow" style="padding:5px;width:160px;">
+                        <center>
+                    	<figure class="images">
+                        	<a style="color:#2a3565;"  href="pdf/ctt purchase order.pdf" target="_blank"><i class="fa fa-file-text fa-5x"></i></a>
+                            
+                        </figure></center>
+                        <div class="post-content text-center clearfix">
+                            <h5 class="occupation">CTT<br />Purchase Order</h5>
+                        </div>
+                    </div>-->
             </section>
             
             </div>
@@ -533,12 +475,12 @@
     <div class="clearfix">
         <ul class="info-box clearfix wow bounceInRight">
             <li>
-                <a href="contact.asp.html">
+                <a href="contact.htm">
                     <span class="fa fa-calendar"></span> Make an appointment
                 </a>
             </li>
             <li>
-                <a href="contact.asp.html">
+                <a href="contact.htm">
                     <span class="fa fa-phone"></span> Contact Us
                 </a>
             </li>
@@ -573,7 +515,7 @@
                             </li>
                             <li>
                                 <strong>Website</strong>
-                                <a href="http://www.gmr-usa.com">gmr-usa.com</a>
+                                <a href="http://portal.gmr-usa.com">gmr-usa.com</a>
                             </li>
                         </ul>
                     </div>
@@ -585,27 +527,27 @@
                         <h3>Our Services</h3>
                         <ul class="links">
                             <li>
-                                <a href="services.asp.html#tab-one">
+                                <a href="services.htm#tab-one">
                                     <i class="fa fa-check-circle"></i>Insured Benefits
                                 </a>
                             </li>
                             <li>
-                                <a href="services.asp.html#tab-two">
+                                <a href="services.htm#tab-two">
                                     <i class="fa fa-check-circle"></i>Self-Funded Benefits
                                 </a>
                             </li>
                             <li>
-                                <a href="services.asp.html#tab-three">
+                                <a href="services.htm#tab-three">
                                     <i class="fa fa-check-circle"></i>Administered Benefits
                                 </a>
                             </li>
                             <li>
-                                <a href="services.asp.html#tab-four">
+                                <a href="services.htm#tab-four">
                                     <i class="fa fa-check-circle"></i>HR Services
                                 </a>
                             </li>
                             <li>
-                                <a href="services.asp.html#tab-five">
+                                <a href="services.htm#tab-five">
                                     <i class="fa fa-check-circle"></i>Retirement Plans
                                 </a>
                             </li>
@@ -619,27 +561,27 @@
                         <h3>Our Support</h3>
                         <ul class="links">
                             <li>
-                                <a href="about.asp.html">
+                                <a href="about.htm">
                                     <i class="fa fa-check-circle"></i>About Us
                                 </a>
                             </li>
                             <li>
-                                <a href="forms.asp.html">
+                                <a href="forms.htm">
                                     <i class="fa fa-check-circle"></i>Online Forms
                                 </a>
                             </li>
                             <li>
-                                <a href="about.asp.html#cs">
+                                <a href="about.htm#cs">
                                     <i class="fa fa-check-circle"></i>Customer testimonials
                                 </a>
                             </li>
                             <li>
-                                <a href="requests.asp.html">
+                                <a href="requests.htm">
                                     <i class="fa fa-check-circle"></i>Benefit Requests
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.asp.html">
+                                <a href="contact.htm">
                                     <i class="fa fa-check-circle"></i>Contact Us
                                 </a>
                             </li>
@@ -680,7 +622,7 @@
 
             <div class="row clearfix">
                 <div class="col-md-6 col-sm-12 col-xs-12">
-                    <div class="copyright">&copy; <a style="color:#fff;" href="http://www.gmr-usa.com" target="_blank"><u>GMR Associates, Inc.</u></a> | All rights reserved 2023
+                    <div class="copyright">&copy; <a style="color:#fff;" href="http://portal.gmr-usa.com" target="_blank"><u>GMR Associates, Inc.</u></a> | All rights reserved 2023
                     <div id="google_translate_element"></div>
                     <script type="text/javascript">
                         function googleTranslateElementInit() {
