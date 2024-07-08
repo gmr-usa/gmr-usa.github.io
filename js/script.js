@@ -348,7 +348,7 @@
             lat: 43.1339309,
             lng: -77.665223,
             infoWindow: {
-                content: '<p style="text-align:center;"><strong>Nexgen Benefits</strong><br>300 Buell Road Rochester, NY 14624</p>'
+                content: '<p style="text-align:center;"><strong>Nexgen Benefits</strong><br>2300 Buffalo Rd<BR>Building 600C Rochester, NY 14624</p>'
             }
 
         });
